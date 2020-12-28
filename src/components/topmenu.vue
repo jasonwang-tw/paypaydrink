@@ -3,7 +3,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/content">content</router-link> |
-      <router-link to="/admin">admin</router-link>
+      <router-link to="/dashboard">dashboard</router-link>
   </div>
 </template>
 

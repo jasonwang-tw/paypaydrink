@@ -1,17 +1,17 @@
 <template>
   <div id="adminapp">
-    <adminmenu/>
+    <dashboardmenu/>
     <h2>sdasdasd</h2>
   </div>
 </template>
 
 <script>
-import adminmenu from '@/components/adminmenu.vue';
+import dashboardmenu from '@/components/dashboardmenu.vue';
 
 export default {
   // name: 'content',
   components: {
-    adminmenu,
+    dashboardmenu,
   },
 };
 </script>

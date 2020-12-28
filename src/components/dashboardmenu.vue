@@ -1,13 +1,13 @@
 <template>
   <div id="nav">
       <router-link to="/content">content</router-link> |
-      <router-link to="/admin">admin</router-link>
+      <router-link to="/dashboard">dashboardmenu</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'adminmenu',
+  name: 'dashboardmenu',
   // props: {
   //   msg: String,
   // },
