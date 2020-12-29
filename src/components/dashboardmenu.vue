@@ -1,7 +1,8 @@
 <template>
+<!-- eslint-disable-next-line vue/max-attributes-per-line -->
   <div id="nav">
     <ul>
-      <li v-for="item in router" :key="item">
+      <li v-for="item in router" :key="item" class="border border-mainColor-100 py-2 px-4 rounded-lg bg-mainColor-100">
         <router-link :to="item.link">{{item.name}}</router-link> |
       </li>
     </ul>
