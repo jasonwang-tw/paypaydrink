@@ -1,16 +1,30 @@
 <template>
   <div id="nav">
-      <router-link to="/content">content</router-link> |
-      <router-link to="/dashboard">dashboardmenu</router-link>
+    <ul>
+      <li v-for="item in router" :key="item">
+        <router-link :to="item.link">{{item.name}}</router-link> |
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
   name: 'dashboardmenu',
-  // props: {
-  //   msg: String,
-  // },
+  data() {
+    return {
+      router: [
+        {
+          link: '/',
+          name: 'Home',
+        },
+        {
+          link: '/dashboard',
+          name: 'dashboard',
+        },
+      ],
+    };
+  },
 };
 </script>
 

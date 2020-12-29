@@ -4,11 +4,11 @@
     <img alt="Vue logo" class="m-auto" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <ul class="grid lg:grid-cols-4 md:grid-cols-2 gap-5 container m-auto">
-      <li class="text-mainColor">1</li>
-      <li class="text-mainColor">2</li>
-      <li class="text-mainColor">3</li>
-      <li class="text-mainColor">4</li>
-      <li class="bg-mainColor opacity-3 text-5xl">5</li>
+      <li class="text-mainColor-100">1</li>
+      <li class="text-mainColor-100">2</li>
+      <li class="text-mainColor-100">3</li>
+      <li class="text-mainColor-100 bg-purple-500 text-white">4</li>
+      <li class="bg-mainColor-100 opacity-3 text-5xl rounded-lg">5</li>
     </ul>
   </div>
 </template>
