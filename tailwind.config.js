@@ -7,7 +7,22 @@ module.exports = {
   theme: {
     colors: {
       mainColor: {
-        100: '#ec4444',
+        100: '#070150',
+      },
+      subColor: {
+        100: '#F39519',
+      },
+      line:{
+        100:'#CECCCC',
+      },
+      support1:{
+        100:'#57C4E5',
+      },
+      support2:{
+        100:'#D9E9FE',
+      },
+      support3:{
+        100:'#AFC8E9',
       },
       transparent: 'transparent',
       current: 'currentColor',
@@ -19,7 +34,6 @@ module.exports = {
       yellow: colors.amber,
       purple: colors.purple,
       green: colors.green,
-      red: colors.red,
     },
     extend: {},
   },
