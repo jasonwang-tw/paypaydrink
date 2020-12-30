@@ -18,7 +18,7 @@
     <ul class="dashboardMenu md:flex items-center md:border-l">
       <li v-for="item in dashboard" :key="item" class="text-subColor-100 hover:text-support1-100 duration-200 px-4 flex">
         <div v-html="item.icon" class="mr-3"></div>
-        <router-link to="item.link">{{item.name}}</router-link>
+        <router-link :to="item.link">{{item.name}}</router-link>
       </li>
     </ul>
     </div>

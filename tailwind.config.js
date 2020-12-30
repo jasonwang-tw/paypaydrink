@@ -12,17 +12,17 @@ module.exports = {
       subColor: {
         100: '#F39519',
       },
-      line:{
-        100:'#CECCCC',
+      line: {
+        100: '#CECCCC',
       },
-      support1:{
-        100:'#57C4E5',
+      support1: {
+        100: '#57C4E5',
       },
-      support2:{
-        100:'#D9E9FE',
+      support2: {
+        100: '#D9E9FE',
       },
-      support3:{
-        100:'#AFC8E9',
+      support3: {
+        100: '#AFC8E9',
       },
       transparent: 'transparent',
       current: 'currentColor',
