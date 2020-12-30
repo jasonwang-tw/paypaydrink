@@ -1,13 +1,7 @@
 <template>
   <splide :options="options">
-    <splide-slide>
-      <img src="../assets/logo.png" />
-    </splide-slide>
-    <splide-slide>
-      <img src="../assets/logo.png" />
-    </splide-slide>
-    <splide-slide>
-      <img src="../assets/logo.png" />
+    <splide-slide v-for="item in slideCard" :key="item">
+      <img :src="item.imgLink" />
     </splide-slide>
   </splide>
 </template>
@@ -26,9 +20,20 @@ export default {
     return {
       options: {
         rewind: true,
-        width: 800,
+        // width: 800,
         gap: '1rem',
       },
+      slideCard: [
+        {
+          imgLink: require('../assets/logo.png'),
+        },
+        {
+          imgLink: require('../assets/logo.png'),
+        },
+        {
+          imgLink: require('../assets/logo.png'),
+        },
+      ],
     };
   },
 };
