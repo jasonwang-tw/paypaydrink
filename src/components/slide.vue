@@ -13,6 +13,7 @@
 </template>
 
 <script>
+// 註冊本地組件
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 
 export default {
