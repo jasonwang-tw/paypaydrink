@@ -6,16 +6,16 @@
       </a>
     </splide-slide>
     
-    <template v-slot:controls>
+    <!-- <template v-slot:controls>
         <div class="splide__progress">
           <div class="splide__progress__bar">
           </div>
         </div>
-        <!-- <div class="splide__autoplay">
+        <div class="splide__autoplay">
           <button class="splide__play">Play</button>
           <button class="splide__pause">Pause</button>
-        </div> -->
-    </template>
+        </div>
+    </template> -->
   </splide>
 </template>
 

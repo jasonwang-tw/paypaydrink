@@ -1,5 +1,6 @@
 // 註冊全局組件
 import Vue from 'vue';
+import './plugins/axios'
 // import VueSplide from '@splidejs/vue-splide';
 import App from './App.vue';
 import router from './router';

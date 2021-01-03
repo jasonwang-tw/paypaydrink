@@ -33,27 +33,7 @@
       <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <div id="shopPosition">
         <select name="" id="" class="border px-4 py-2 border-support3-100 rounded-md text-mainColor-100">
-          <option value="city1">臺北市</option>
-          <option value="city2">新北市</option>
-          <option value="city3">桃園市</option>
-          <option value="city4">臺中市</option>
-          <option value="city5">臺南市</option>
-          <option value="city6">高雄市</option>
-          <option value="city7">苗栗縣</option>
-          <option value="city8">彰化縣</option>
-          <option value="city9">南投縣</option>
-          <option value="city10">雲林縣</option>
-          <option value="city11">嘉義縣</option>
-          <option value="city12">屏東縣</option>
-          <option value="city13">宜蘭縣</option>
-          <option value="city14">花蓮縣</option>
-          <option value="city15">臺東縣</option>
-          <option value="city16">澎湖縣</option>
-          <option value="city17">金門縣</option>
-          <option value="city18">連江縣</option>
-          <option value="city19">基隆市</option>
-          <option value="city20">新竹市</option>
-          <option value="city21">嘉義市</option>
+          <option :value="item.name" v-for="item in taiwan" :key="item">{{item.name}}</option>
         </select>
         <select name="" id="" class="border px-4 py-2 border-support3-100 rounded-md text-mainColor-100">
           <option value="area1">中正區</option>
@@ -80,7 +60,7 @@
 import topmenu from '@/components/topmenu.vue';
 import slide from '@/components/slide.vue';
 import carousel from '@/components/carousel.vue';
-// import taiwan from '../data/taiwan_districts.json';
+import taiwan from '../../static/resource/taiwan_districts.json';
 // const config = JSON.parse(taiwan);
 
 export default {
@@ -93,6 +73,7 @@ export default {
   },
   data() {
     return {
+      taiwan ,
       magic: [
         {
           icon: 'pay-mobile',
