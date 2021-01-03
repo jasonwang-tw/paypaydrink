@@ -1,5 +1,5 @@
 <template>
-  <div class="header py-3 px-5 border-b border-support2-100 top-0 sticky z-10">
+  <div class="header py-3 px-5 border-b border-support2-100 top-0 sticky z-10 bg-white">
     <div class="container m-auto flex justify-between">
     <div class="logo">
       <router-link to="/">

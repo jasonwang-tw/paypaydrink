@@ -20,8 +20,8 @@ export default {
     return {
       options: {
         rewind: true,
-        width: 800,
-        gap: '1rem',
+        // width: 1300,
+        // gap: '1rem',
       },
       slideCard: [
         {
