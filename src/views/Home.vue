@@ -5,11 +5,11 @@
       <img src="../assets/drinkCup.png" alt="" srcset="" class="absolute bottom-0" />
       <img src="../assets/topBannerBg.jpg" alt="" srcset="" />
     </div>
-    <div class="saleActive container m-auto text-center relative z-0">
+    <div class="saleActive container m-auto text-center relative z-0 -mt-80">
       <h2 class="text-4xl font-bold text-white">優惠活動</h2>
       <p class="mt-3 text-subColor-100">快揪好友，省錢趁現在！</p>
       <div class="flex justify-center mt-10">
-        <carousel />
+        <!-- <carousel /> -->
       </div>
     </div>
     <div class="drinkMagic text-center mt-48">
@@ -18,7 +18,7 @@
       <ul class="grid gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-20 py-10">
         <li class="flex bg-support2-100 p-8 rounded-xl" v-for="item in magic" :key="item">
           <div class="icon mr-5 text-subColor-100">
-            <span :class="item.icon" class="text-5xl"></span>
+            <i :class="item.icon" class="text-5xl"></i>
           </div>
           <div class="infotext text-left">
             <h3 class="text-xl font-bold text-mainColor-100">{{ item.title }}</h3>
@@ -49,7 +49,7 @@
 <script>
   // @ is an alias to /src
   import topmenu from '@/components/topmenu'
-  import carousel from '@/components/carousel'
+  // import carousel from '@/components/carousel'
   import shopPosition from '@/components/shopPosition'
   import footerBar from '@/components/footerBar'
 
@@ -57,7 +57,7 @@
     name: 'Home',
     components: {
       topmenu,
-      carousel,
+      // carousel,
       shopPosition,
       footerBar
     },
@@ -110,8 +110,15 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  .saleActive {
-    margin-top: -310px;
-  }
+<style lang="scss">
+  // @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+  // html,
+  // body {
+  //   font-family: 'Noto Sans TC', sans-serif;
+  //   font-size: 16px;
+  //   padding: 0;
+  //   margin: 0;
+  // }
+
 </style>

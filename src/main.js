@@ -4,6 +4,7 @@ import './plugins/axios'
 // import VueSplide from '@splidejs/vue-splide';
 import App from './App.vue';
 import router from './router';
+import './assets/style.css';
 import './assets/tailwind.css';
 
 Vue.config.productionTip = false;

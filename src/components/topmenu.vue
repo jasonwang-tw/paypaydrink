@@ -7,7 +7,7 @@
       </router-link>
     </div>
     <div class="mobileMenu flex items-center md:hidden">
-      <span class="pay-menu"></span>
+      <i class="pay-menu"></i>
     </div>
     <div class="nav hidden md:flex">
     <ul class="mainMenu md:flex items-center">
@@ -52,12 +52,12 @@ export default {
       dashboard: [
         {
           link: '/',
-          icon: '<span class="pay-shop"></span>',
+          icon: '<i class="pay-shop"></i>',
           name: '我是店長',
         },
         {
           link: '/',
-          icon: '<span class="pay-member"></span>',
+          icon: '<i class="pay-member"></i>',
           name: '我是會員',
         },
       ],

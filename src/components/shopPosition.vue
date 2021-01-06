@@ -33,15 +33,15 @@
           </div>
           <ul class="flex mt-2 pb-5">
             <li>
-              <span class="pay-pin"></span>
+              <i class="pay-pin"></i>
               {{ shop.postition }}
             </li>
             <li>
-              <span class="pay-tel"></span>
+              <i class="pay-tel"></i>
               {{ shop.tel }}
             </li>
             <li>
-              <span class="pay-clock"></span>
+              <i class="pay-clock"></i>
               {{ shop.openTime }}
             </li>
           </ul>
@@ -120,7 +120,7 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
-    span {
+    i {
       color: #f39519;
       margin-right: 10px;
     }

@@ -6,19 +6,15 @@
       <router-link to="/content">content</router-link> |
       <router-link to="/admin/admin">admin</router-link>
     </div> -->
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
+  // font style
 
-// font style
+  // @import '../src/assets/style.css';
 
-@import '../src/assets/style.css';
+  // main style
 
-// main style
-
-html,body{
-  font-size: 16px;
-}
 </style>
