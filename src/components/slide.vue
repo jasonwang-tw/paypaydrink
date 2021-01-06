@@ -39,5 +39,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../../node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css";
+// @import "../../node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css";
+@import url(https://res.cloudinary.com/cally-cannon/raw/upload/v1609946205/CDN/splide-default.min.css);
 </style>

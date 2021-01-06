@@ -9,7 +9,7 @@
       <h2 class="text-4xl font-bold text-white">優惠活動</h2>
       <p class="mt-3 text-subColor-100">快揪好友，省錢趁現在！</p>
       <div class="flex justify-center mt-10">
-        <!-- <carousel /> -->
+        <carousel />
       </div>
     </div>
     <div class="drinkMagic text-center mt-48">
@@ -49,7 +49,7 @@
 <script>
   // @ is an alias to /src
   import topmenu from '@/components/topmenu'
-  // import carousel from '@/components/carousel'
+  import carousel from '@/components/carousel'
   import shopPosition from '@/components/shopPosition'
   import footerBar from '@/components/footerBar'
 
@@ -57,7 +57,7 @@
     name: 'Home',
     components: {
       topmenu,
-      // carousel,
+      carousel,
       shopPosition,
       footerBar
     },
@@ -120,5 +120,4 @@
   //   padding: 0;
   //   margin: 0;
   // }
-
 </style>
