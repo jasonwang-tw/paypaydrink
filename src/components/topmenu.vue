@@ -64,7 +64,7 @@
             name: '我是店長'
           },
           {
-            link: '/',
+            link: '/dashboard',
             icon: '<i class="pay-member"></i>',
             name: '我是會員'
           }

@@ -29,8 +29,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  // mode: 'history',
-  mode: 'hash',
+  // mode: 'history',  //開發
+  mode: 'hash',  //gh-page
   routes,
 });
 
