@@ -2,40 +2,49 @@
   <div class="home">
     <topmenu />
     <div class="topBanner relative">
-      <img src="../assets/drinkCup.png" alt="" srcset="" class="absolute bottom-0" />
-      <img src="../assets/topBannerBg.jpg" alt="" srcset="" />
+      <h1 class="indexTitle text-7xl container m-auto py-20 px-60">
+        <span class="font-light">配配</span><span>飲</span><br /><span class="text-5xl text-subColor-100"
+          >您專屬的飲品魔法師</span
+        >
+      </h1>
+      <img src="../assets/drinkCup.png" alt="" srcset="" class="absolute -bottom-24" />
     </div>
-    <div class="saleActive container m-auto text-center relative z-0 -mt-80">
-      <h2 class="text-4xl font-bold text-white">優惠活動</h2>
+    <div class="saleActive container m-auto text-center relative z-10 -mt-80">
+      <h1 class="text-white">優惠活動</h1>
       <p class="mt-3 text-subColor-100">快揪好友，省錢趁現在！</p>
       <div class="flex justify-center mt-10">
         <carousel />
       </div>
     </div>
-    <div class="drinkMagic text-center mt-48">
-      <h2 class="text-4xl font-bold">配配飲的魔法</h2>
-      <p class="mt-3">我們堅持經典也擁抱創新，只是希望能看到您滿足的笑容 :D</p>
-      <ul class="grid gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-20 py-10">
-        <li class="flex bg-support2-100 p-8 rounded-xl" v-for="item in magic" :key="item">
-          <div class="icon mr-5 text-subColor-100">
-            <i :class="item.icon" class="text-5xl"></i>
-          </div>
-          <div class="infotext text-left">
-            <h3 class="text-xl font-bold text-mainColor-100">{{ item.title }}</h3>
-            <p class="mt-2 text-gray-600">{{ item.text }}</p>
-          </div>
-        </li>
-      </ul>
+    <div class="drinkMagic text-center mt-48 relative z-0">
+      <img src="../assets/gradientBg.png" alt="" srcset="" class="absolute z-0 center" />
+      <div class="relative">
+        <h2 class="">配配飲的魔法</h2>
+        <p class="mt-3">我們堅持經典也擁抱創新，只是希望能看到您滿足的笑容 :D</p>
+        <ul
+          class="magicList grid gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-20 md:px-10 px-5 py-10"
+        >
+          <li class="flex p-8 rounded-xl" v-for="item in magic" :key="item">
+            <div class="icon mr-5 text-subColor-100">
+              <i :class="item.icon" class="text-5xl"></i>
+            </div>
+            <div class="infotext text-left">
+              <h3 class="text-xl font-medium text-mainColor-900">{{ item.title }}</h3>
+              <p class="mt-2 text-gray-600">{{ item.text }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="drinkMagic text-center mt-20">
-      <h2 class="text-4xl font-bold">立即體驗</h2>
+    <div class="drinkMagic text-center mt-20 relative">
+      <h2 class="">立即體驗</h2>
       <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <shopPosition />
     </div>
-    <div class="downApp bg-mainColor-100 mt-52">
+    <div class="downApp bg-mainColor-900 mt-52">
       <div class="container m-auto text-center relative py-16">
-        <img src="../assets/downhand.svg" alt="" srcset="" class="absolute bottom-0 left-40" />
-        <h2 class="text-white text-4xl font-extrabold">
+        <img src="../assets/downhand.svg" alt="" srcset="" class="absolute bottom-0 left-64" />
+        <h2 class="text-white font-extrabold">
           立即下載<span class="text-subColor-100 ml-3">配配飲</span>
         </h2>
         <p class="text-white mt-3 mb-6">客製屬於您的飲品</p>
@@ -111,13 +120,18 @@
 </script>
 
 <style lang="scss">
-  // @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
-
-  // html,
-  // body {
-  //   font-family: 'Noto Sans TC', sans-serif;
-  //   font-size: 16px;
-  //   padding: 0;
-  //   margin: 0;
-  // }
+  .topBanner {
+    height: 1000px;
+    background-image: url(../assets/topBannerBg.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .magicList {
+    li {
+      background-color: #f3f8ff;
+    }
+  }
+  .indexTitle {
+    letter-spacing: 1rem;
+  }
 </style>

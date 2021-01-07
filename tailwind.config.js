@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     colors: {
       mainColor: {
-        100: '#070150',
+        100: '#336699',
+        900: '#070150',
       },
       subColor: {
         100: '#F39519',
@@ -17,6 +18,7 @@ module.exports = {
       },
       support1: {
         100: '#57C4E5',
+        500: '#4197B1',
       },
       support2: {
         100: '#D9E9FE',

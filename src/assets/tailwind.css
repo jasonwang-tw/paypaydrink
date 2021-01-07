@@ -14,5 +14,76 @@
     font-weight: 300;
     padding: 0;
     margin: 0;
+    @apply text-mainColor-900;
+  }
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  h4 {
+    @apply text-xl font-semibold;
+  }
+  h5 {
+    @apply text-lg font-semibold;
+  }
+  h6 {
+    @apply text-sm font-semibold;
+  }
+  td {
+    @apply px-4 py-2 border-support2-100;
+  }
+  big {
+    @apply text-lg;
+  }
+  small {
+    @apply text-xs;
+  }
+  a {
+    @apply underline duration-200;
+  }
+  strong {
+    @apply font-bold;
+  }
+  ul,
+  ol {
+    @apply pl-5;
+    list-style-type: inherit;
+  }
+  select,
+  input:not([type='radio']):not([type='checkbox']) {
+    @apply border px-4 py-2 border-support3-100 rounded-md text-mainColor-900 placeholder-support3-100;
+  }
+  p {
+    @apply text-base leading-6;
+  }
+  hr {
+    @apply border-support2-100 my-5;
+  }
+}
+@layer components {
+  .btn-border-light-blue {
+    @apply hover:text-mainColor-100 hover:border-mainColor-100 duration-200 text-support1-100 border-support1-100 border py-2 px-4 rounded-md no-underline;
+  }
+  .btn-border-dark-blue {
+    @apply hover:text-support1-100 hover:border-support1-100 duration-200 text-mainColor-100 border-mainColor-100 border py-2 px-4 rounded-md no-underline;
+  }
+  .btn-light-blue {
+    @apply text-white bg-support1-100 hover:bg-support1-500 duration-200;
+  }
+  .btn-dark-blue {
+    @apply text-white bg-mainColor-900 hover:bg-mainColor-100 duration-200;
+  }
+  .line {
+    @apply border-support2-100;
+  }
+  .center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

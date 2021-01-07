@@ -10,23 +10,23 @@
         <i class="pay-menu"></i>
       </div>
       <div class="nav hidden md:flex">
-        <ul class="mainMenu md:flex items-center">
+        <ul class="mainMenu md:flex items-center list-none">
           <li
             v-for="item in mainPage"
             :key="item"
-            class="text-mainColor-100 hover:text-support1-100 duration-200 px-4"
+            class="text-mainColor-900 hover:text-support1-100 px-4"
           >
-            <router-link :to="item.link">{{ item.name }}</router-link>
+            <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
           </li>
         </ul>
-        <ul class="dashboardMenu md:flex items-center md:border-l">
+        <ul class="dashboardMenu md:flex items-center md:border-l pl-0">
           <li
             v-for="item in dashboard"
             :key="item"
-            class="text-subColor-100 hover:text-support1-100 duration-200 px-4 flex"
+            class="text-subColor-100 px-4 hover:text-yellow-400 flex"
           >
-            <div v-html="item.icon" class="mr-3"></div>
-            <router-link :to="item.link">{{ item.name }}</router-link>
+            <div v-html="item.icon" class="mr-3 duration-200 "></div>
+            <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
           </li>
         </ul>
       </div>
