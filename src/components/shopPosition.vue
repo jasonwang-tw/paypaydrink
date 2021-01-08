@@ -1,7 +1,7 @@
 <template>
   <div id="shopPosition" class="mt-5">
     <form action="" method="post">
-      <select name="" id="" class="w-80 mr-5" @change="cityToArea">
+      <select name="" id="" class="w-80 mr-0 md:mr-5 mb-5 md:mb-0" @change="cityToArea">
         <option :value="itemt.CityName" v-for="(itemt, index) in taiwan" :key="index" :data="index">
           {{ itemt.CityName }}
         </option>
@@ -12,17 +12,17 @@
         </option>
       </select>
     </form>
-    <ul class="shopResult mx-auto my-10 max-w-4xl">
+    <ul class="shopResult mx-auto my-10 max-w-4xl p-10">
       <li
         v-for="(shop, index) in shopList"
         :key="index"
-        class="flex items-center justify-between border-b border-sup2-100 mb-5"
+        class="block sm:flex items-center justify-between border-b border-sup2-100 mb-5"
       >
         <div class="shopInfo text-left text-main-900">
           <div class="shopName text-2xl font-bold">
             {{ shop.name }}
           </div>
-          <ul class="flex mt-2 pb-5 pl-0">
+          <ul class="block lg:flex mt-2 pb-5 pl-0">
             <li>
               <i class="pay-pin"></i>
               {{ shop.postition }}
@@ -42,7 +42,7 @@
             :href="shop.mapLink"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn-border-light-blue"
+            class="btn-border-light-blue inline-block mb-5 sm:mb-0"
             >查看位置</a
           >
         </div>

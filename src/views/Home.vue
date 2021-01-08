@@ -2,14 +2,15 @@
   <div class="home">
     <topmenu />
     <div class="topBanner relative">
-      <h1 class="indexTitle text-7xl container m-auto py-20 px-60">
-        <span class="font-light">配配</span><span>飲</span><br /><span class="text-5xl text-sub-100"
+      <h1 class="indexTitle lg:text-7xl text-6xl container m-auto xl:py-20 xl:px-60 py-20 px-10">
+        <span class="font-light">配配</span><span>飲</span><br /><span
+          class="lg:text-5xl text-4xl text-sub-100"
           >您專屬的飲品魔法師</span
         >
       </h1>
-      <img src="../assets/drinkCup.png" alt="" srcset="" class="absolute -bottom-24" />
+      <div class="drinkCup absolute"></div>
     </div>
-    <div class="saleActive container m-auto text-center relative z-10 -mt-80">
+    <div class="saleActive container m-auto text-center relative z-10">
       <h1 class="text-white">優惠活動</h1>
       <p class="mt-3 text-sub-100">快揪好友，省錢趁現在！</p>
       <div class="flex justify-center mt-10">
@@ -22,7 +23,7 @@
         <h2 class="">配配飲的魔法</h2>
         <p class="mt-3">我們堅持經典也擁抱創新，只是希望能看到您滿足的笑容 :D</p>
         <ul
-          class="magicList grid gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-20 md:px-10 px-5 py-10"
+          class="magicList grid gap-5 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:px-20 md:px-10 px-5 py-10"
         >
           <li class="flex p-8 rounded-xl" v-for="item in magic" :key="item">
             <div class="icon mr-5 text-sub-100">
@@ -41,9 +42,14 @@
       <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <shopPosition />
     </div>
-    <div class="downApp bg-main-900 mt-52">
+    <div class="downApp bg-main-900 md:mt-52">
       <div class="container m-auto text-center relative py-16">
-        <img src="../assets/downhand.svg" alt="" srcset="" class="absolute bottom-0 left-64" />
+        <img
+          src="../assets/downhand.svg"
+          alt=""
+          srcset=""
+          class="downhand absolute bottom-0 md:block hidden"
+        />
         <h2 class="text-white font-extrabold">
           立即下載<span class="text-sub-100 ml-3">配配飲</span>
         </h2>
@@ -118,8 +124,7 @@
     // },
   }
 </script>
-
-<style lang="scss">
+<style lang="scss" scoped>
   .topBanner {
     height: 1000px;
     background-image: url(../assets/topBannerBg.jpg);
@@ -133,5 +138,60 @@
   }
   .indexTitle {
     letter-spacing: 1rem;
+  }
+  .drinkCup {
+    width: 100%;
+    height: 1050px;
+    bottom: -80px;
+    background-image: url(../assets/drinkCup.png);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .saleActive {
+    margin-top: -330px;
+  }
+  .downhand {
+    left: 250px;
+  }
+  @media (max-width: 1440px) {
+    .drinkCup {
+      bottom: -100px;
+    }
+    .saleActive {
+      margin-top: -250px;
+    }
+    .downhand {
+      left: 50px;
+    }
+  }
+  @media (max-width: 996px) {
+    .topBanner {
+      height: 800px;
+    }
+    .drinkCup {
+      bottom: -170px;
+    }
+    .indexTitle {
+      letter-spacing: 0.5rem;
+    }
+    .saleActive {
+      margin-top: -250px;
+    }
+    .downhand {
+      left: -50px;
+    }
+  }
+  @media (max-width: 480px) {
+    .drinkCup {
+      height: 500px;
+      bottom: 100px;
+      background-position: -300px center;
+      background-size: cover;
+      // bottom: -100px;
+    }
+    .indexTitle {
+      letter-spacing: 0rem;
+    }
   }
 </style>

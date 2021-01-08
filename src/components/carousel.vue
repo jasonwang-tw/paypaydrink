@@ -4,10 +4,10 @@
       <splide-slide
         v-for="item in slideCard"
         :key="item"
-        class="flex justify-center items-center rounded-3xl overflow-hidden bg-white"
+        class="flex justify-center items-center rounded-3xl overflow-hidden bg-white shadow-xl mb-10"
       >
         <a href="#">
-          <img :src="item.imgLink" />
+          <img :src="item.imgSrc" />
         </a>
       </splide-slide>
 
@@ -27,13 +27,13 @@
 
 <script>
   // 註冊本地組件
-  import { Splide, SplideSlide } from '@splidejs/vue-splide';
+  import { Splide, SplideSlide } from '@splidejs/vue-splide'
 
   export default {
     name: 'slide',
     components: {
       Splide,
-      SplideSlide,
+      SplideSlide
     },
     data() {
       return {
@@ -47,27 +47,49 @@
           autoplay: true,
           pauseOnHover: false,
           resetProgress: false,
-          focus: 'center'
+          focus: 'center',
           // arrows      : 'slider',
+          breakpoints: {
+            '1440': {
+              width: 900,
+              perPage: 3,
+              gap: '2rem'
+            },
+            '900': {
+              width: 600,
+              perPage: 2,
+              gap: '2rem'
+            },
+            '600': {
+              width: 400,
+              perPage: 1,
+              gap: '2rem'
+            },
+            '480': {
+              width: 360,
+              perPage: 1,
+              gap: '1rem'
+            }
+          }
         },
         slideCard: [
           {
-            imgLink: require('../assets/drinkCup.png')
+            imgSrc: require('../assets/drinkCup.png')
           },
           {
-            imgLink: require('../assets/active1.jpg')
+            imgSrc: require('../assets/active1.jpg')
           },
           {
-            imgLink: require('../assets/active2.jpg')
+            imgSrc: require('../assets/active2.jpg')
           },
           {
-            imgLink: require('../assets/active3.jpg')
+            imgSrc: require('../assets/active3.jpg')
           },
           {
-            imgLink: require('../assets/logo.png')
+            imgSrc: require('../assets/logo.png')
           },
           {
-            imgLink: require('../assets/logo.png')
+            imgSrc: require('../assets/logo.png')
           }
         ]
       }
