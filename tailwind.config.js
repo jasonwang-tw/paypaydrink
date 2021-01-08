@@ -6,25 +6,25 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      mainColor: {
-        100: '#336699',
-        900: '#070150',
+      main: {
+        100: 'var(--main-100)',
+        900: 'var(--main-900)',
       },
-      subColor: {
-        100: '#F39519',
+      sub: {
+        100: 'var(--color-sub)',
       },
       line: {
-        100: '#CECCCC',
+        100: 'var(--color-line)',
       },
-      support1: {
-        100: '#57C4E5',
-        500: '#4197B1',
+      sup1: {
+        100: 'var(--color-sup1-100)',
+        500: 'var(--color-sup1-500)',
       },
-      support2: {
-        100: '#D9E9FE',
+      sup2: {
+        100: 'var(--color-sup2)',
       },
-      support3: {
-        100: '#AFC8E9',
+      sup3: {
+        100: 'var(--color-sup3)',
       },
       transparent: 'transparent',
       current: 'currentColor',

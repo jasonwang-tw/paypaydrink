@@ -1,5 +1,5 @@
 <template>
-  <div class="header py-3 px-5 border-b border-support2-100 top-0 sticky z-10 bg-white">
+  <div class="header py-3 px-5 border-b border-sup2-100 top-0 sticky z-10 bg-white">
     <div class="container m-auto flex justify-between">
       <div class="logo">
         <router-link to="/">
@@ -11,11 +11,7 @@
       </div>
       <div class="nav hidden md:flex">
         <ul class="mainMenu md:flex items-center list-none">
-          <li
-            v-for="item in mainPage"
-            :key="item"
-            class="text-mainColor-900 hover:text-support1-100 px-4"
-          >
+          <li v-for="item in mainPage" :key="item" class="text-main-900 hover:text-sup1-100 px-4">
             <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
           </li>
         </ul>
@@ -23,7 +19,7 @@
           <li
             v-for="item in dashboard"
             :key="item"
-            class="text-subColor-100 px-4 hover:text-yellow-400 flex"
+            class="text-sub-100 px-4 hover:text-yellow-400 flex"
           >
             <div v-html="item.icon" class="mr-3 duration-200 "></div>
             <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>

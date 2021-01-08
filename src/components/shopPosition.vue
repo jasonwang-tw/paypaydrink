@@ -1,12 +1,7 @@
 <template>
   <div id="shopPosition" class="mt-5">
     <form action="" method="post">
-      <select
-        name=""
-        id=""
-        class="w-80 mr-5"
-        @change="cityToArea"
-      >
+      <select name="" id="" class="w-80 mr-5" @change="cityToArea">
         <option :value="itemt.CityName" v-for="(itemt, index) in taiwan" :key="index" :data="index">
           {{ itemt.CityName }}
         </option>
@@ -21,9 +16,9 @@
       <li
         v-for="(shop, index) in shopList"
         :key="index"
-        class="flex items-center justify-between border-b border-support2-100 mb-5"
+        class="flex items-center justify-between border-b border-sup2-100 mb-5"
       >
-        <div class="shopInfo text-left text-mainColor-900">
+        <div class="shopInfo text-left text-main-900">
           <div class="shopName text-2xl font-bold">
             {{ shop.name }}
           </div>
@@ -53,7 +48,7 @@
         </div>
       </li>
     </ul>
-    <!-- <select name="" id="" class="border px-4 py-2 border-support3-100 rounded-md text-mainColor-900">
+    <!-- <select name="" id="" class="border px-4 py-2 border-sup3-100 rounded-md text-main-900">
       <option v-for="(items, index) of info.data.retVal" :key="index">{{items.sna}}</option>
     </select> -->
   </div>

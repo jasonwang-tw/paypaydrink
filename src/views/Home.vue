@@ -3,7 +3,7 @@
     <topmenu />
     <div class="topBanner relative">
       <h1 class="indexTitle text-7xl container m-auto py-20 px-60">
-        <span class="font-light">配配</span><span>飲</span><br /><span class="text-5xl text-subColor-100"
+        <span class="font-light">配配</span><span>飲</span><br /><span class="text-5xl text-sub-100"
           >您專屬的飲品魔法師</span
         >
       </h1>
@@ -11,7 +11,7 @@
     </div>
     <div class="saleActive container m-auto text-center relative z-10 -mt-80">
       <h1 class="text-white">優惠活動</h1>
-      <p class="mt-3 text-subColor-100">快揪好友，省錢趁現在！</p>
+      <p class="mt-3 text-sub-100">快揪好友，省錢趁現在！</p>
       <div class="flex justify-center mt-10">
         <carousel />
       </div>
@@ -25,11 +25,11 @@
           class="magicList grid gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-20 md:px-10 px-5 py-10"
         >
           <li class="flex p-8 rounded-xl" v-for="item in magic" :key="item">
-            <div class="icon mr-5 text-subColor-100">
+            <div class="icon mr-5 text-sub-100">
               <i :class="item.icon" class="text-5xl"></i>
             </div>
             <div class="infotext text-left">
-              <h3 class="text-xl font-medium text-mainColor-900">{{ item.title }}</h3>
+              <h3 class="text-xl font-medium text-main-900">{{ item.title }}</h3>
               <p class="mt-2 text-gray-600">{{ item.text }}</p>
             </div>
           </li>
@@ -41,11 +41,11 @@
       <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <shopPosition />
     </div>
-    <div class="downApp bg-mainColor-900 mt-52">
+    <div class="downApp bg-main-900 mt-52">
       <div class="container m-auto text-center relative py-16">
         <img src="../assets/downhand.svg" alt="" srcset="" class="absolute bottom-0 left-64" />
         <h2 class="text-white font-extrabold">
-          立即下載<span class="text-subColor-100 ml-3">配配飲</span>
+          立即下載<span class="text-sub-100 ml-3">配配飲</span>
         </h2>
         <p class="text-white mt-3 mb-6">客製屬於您的飲品</p>
         <img src="../assets/appDown.png" alt="" srcset="" class="block m-auto" />

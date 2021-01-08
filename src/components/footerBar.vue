@@ -3,29 +3,49 @@
     <div class="max-w-3xl m-auto py-10 text-center">
       <img src="../assets/footer_logo.svg" alt="" class="block m-auto" />
       <div class="pt-5">
-      <router-link v-for="(item, index) in footerMenu" :key="index" :to="item.link" class="no-underline hover:text-support1-100 px-3">{{
-        item.name
-      }}</router-link>
+        <router-link
+          v-for="(item, index) in footerMenu"
+          :key="index"
+          :to="item.link"
+          class="no-underline hover:text-sup1-100 px-3"
+          >{{ item.name }}</router-link
+        >
       </div>
-      <hr>
+      <hr />
       <div class="content flex justify-between">
         <div class="us flex">
-          <h5 class="mr-10 text-subColor-100">聯絡我們</h5>
+          <h5 class="mr-10 text-sub-100">聯絡我們</h5>
           <ul class="list-none pl-0 text-left">
             <li>台北市中山區中山北路96號13樓1405室</li>
-            <li><a href="mailto:evan@wiidreamthinker.com" class="hover:text-support1-100">evan@wiidreamthinker.com</a></li>
+            <li>
+              <a href="mailto:evan@wiidreamthinker.com" class="hover:text-sup1-100"
+                >evan@wiidreamthinker.com</a
+              >
+            </li>
           </ul>
         </div>
         <div class="social flex">
-          <h5 class="mr-10 text-subColor-100">Follow US</h5>
+          <h5 class="mr-10 text-sub-100">Follow US</h5>
           <ul class="list-none pl-0 flex">
-            <li class="px-3"><a href="#" class="no-underline hover:text-support1-100"><i class="pay-fb text-lg"></i></a></li>
-            <li class="px-3"><a href="#" class="no-underline hover:text-support1-100"><i class="pay-ig text-lg"></i></a></li>
-            <li class="px-3"><a href="#" class="no-underline hover:text-support1-100"><i class="pay-yt text-lg"></i></a></li>
+            <li class="px-3">
+              <a href="#" class="no-underline hover:text-sup1-100"
+                ><i class="pay-fb text-lg"></i
+              ></a>
+            </li>
+            <li class="px-3">
+              <a href="#" class="no-underline hover:text-sup1-100"
+                ><i class="pay-ig text-lg"></i
+              ></a>
+            </li>
+            <li class="px-3">
+              <a href="#" class="no-underline hover:text-sup1-100"
+                ><i class="pay-yt text-lg"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="coptRight">© 2020 PayPayDrink</div>
     </div>
   </div>
