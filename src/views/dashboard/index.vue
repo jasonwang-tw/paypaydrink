@@ -2,6 +2,7 @@
   <div id="adminapp">
     <dashboardmenu/>
     <h2>sdasdasd</h2>
+    <h4>dsdaddad</h4>
   </div>
 </template>
 

@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     colors: {
       main: {
-        100: 'var(--main-100)',
-        900: 'var(--main-900)',
+        100: 'var(--color-main-100)',
+        900: 'var(--color-main-900)',
       },
       sub: {
         100: 'var(--color-sub)',

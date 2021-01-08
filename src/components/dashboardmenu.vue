@@ -5,7 +5,7 @@
       <li
         v-for="item in router"
         :key="item"
-        class="border border-main-100 py-2 px-4 rounded-lg bg-main-100"
+        class="border border-main-100 py-2 px-4 bg-main-100"
       >
         <router-link :to="item.link">{{ item.name }}</router-link> |
       </li>
