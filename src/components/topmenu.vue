@@ -6,10 +6,14 @@
           <img src="../assets/logo.svg" alt="" />
         </router-link>
       </div>
-      <div class="mobileMenu flex items-center md:hidden">
+      <div class="mobileMenu flex items-center md:hidden" @click="mobileClick = !mobileClick">
         <i class="pay-menu"></i>
       </div>
-      <div class="nav hidden md:flex">
+      <div
+        class="nav md:flex fixed bg-white h-full md:h-auto md:relative duration-200"
+        :class="{ mobileOpenClass: mobileClick }"
+      >
+        <div class="block md:hidden" @click="mobileClick = !mobileClick">Close</div>
         <ul class="mainMenu md:flex items-center list-none">
           <li v-for="item in mainPage" :key="item" class="text-main-900 hover:text-sup1-100 px-4">
             <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
@@ -64,11 +68,22 @@
             icon: '<i class="pay-member"></i>',
             name: '我是會員'
           }
-        ]
+        ],
+        mobileClick: false
       }
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+  @media (max-width: 768px) {
+    .nav {
+      width: 300px;
+      right: -300px;
+    }
+    .mobileOpenClass {
+      right: 0;
+    }
+  }
+</style>

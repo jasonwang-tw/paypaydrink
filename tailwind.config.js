@@ -45,6 +45,10 @@ module.exports = {
     },
     extend: {},
   },
+  corePlugins: {
+    // fontFamily: false,
+    // fontWeight: false,
+  },
   variants: {
     extend: {},
   },

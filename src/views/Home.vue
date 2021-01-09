@@ -2,7 +2,7 @@
   <div class="home">
     <topmenu />
     <div class="topBanner relative">
-      <h1 class="indexTitle lg:text-7xl text-6xl container m-auto xl:py-20 xl:px-60 py-20 px-10">
+      <h1 class="indexTitle lg:text-7xl text-main-900 text-6xl container m-auto xl:py-20 xl:px-60 py-20 px-10">
         <span class="font-light">配配</span><span>飲</span><br /><span
           class="lg:text-5xl text-4xl text-sub-100"
           >您專屬的飲品魔法師</span
@@ -30,14 +30,14 @@
               <i :class="item.icon" class="text-5xl"></i>
             </div>
             <div class="infotext text-left">
-              <h3 class="text-xl font-medium text-main-900">{{ item.title }}</h3>
+              <h3 class="text-xl text-main-900">{{ item.title }}</h3>
               <p class="mt-2 text-gray-600">{{ item.text }}</p>
             </div>
           </li>
         </ul>
       </div>
     </div>
-    <div class="drinkMagic text-center mt-20 relative">
+    <div class="text-center mt-20 relative">
       <h2 class="">立即體驗</h2>
       <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <shopPosition />
