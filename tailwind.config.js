@@ -14,10 +14,11 @@ module.exports = {
     colors: {
       main: {
         100: 'var(--color-main-100)',
-        900: 'var(--color-main-900)',
+        500: 'var(--color-main-500)',
       },
       sub: {
-        100: 'var(--color-sub)',
+        100: 'var(--color-sub-hover)',
+        500: 'var(--color-sub)',
       },
       line: {
         100: 'var(--color-line)',
@@ -27,10 +28,11 @@ module.exports = {
         500: 'var(--color-sup1-500)',
       },
       sup2: {
-        100: 'var(--color-sup2)',
+        500: 'var(--color-sup2)',
       },
       sup3: {
-        100: 'var(--color-sup3)',
+        400: 'var(--color-sup3-placeholder)',
+        500: 'var(--color-sup3)',
       },
       transparent: 'transparent',
       current: 'currentColor',

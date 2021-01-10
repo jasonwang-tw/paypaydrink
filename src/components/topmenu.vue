@@ -1,5 +1,5 @@
 <template>
-  <div class="header py-3 px-5 border-b border-sup2-100 top-0 sticky z-20 bg-white">
+  <div class="header py-3 px-5 border-b border-sup2-500 top-0 sticky z-20 bg-white">
     <div class="container m-auto flex justify-between">
       <div class="logo">
         <router-link to="/">
@@ -15,7 +15,7 @@
       >
         <div class="block md:hidden" @click="mobileClick = !mobileClick">Close</div>
         <ul class="mainMenu md:flex items-center list-none">
-          <li v-for="item in mainPage" :key="item" class="text-main-900 hover:text-sup1-100 px-4">
+          <li v-for="item in mainPage" :key="item" class="text-main-500 hover:text-sup1-100 px-4">
             <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
           </li>
         </ul>
@@ -23,7 +23,7 @@
           <li
             v-for="item in dashboard"
             :key="item"
-            class="text-sub-100 px-4 hover:text-yellow-400 flex"
+            class="text-sub-500 px-4 hover:text-sub-100 flex"
           >
             <div v-html="item.icon" class="mr-3 duration-200 "></div>
             <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
@@ -64,9 +64,9 @@
             name: '我是店長'
           },
           {
-            link: '/dashboard',
+            link: '/login',
             icon: '<i class="pay-member"></i>',
-            name: '我是會員'
+            name: '立即訂餐'
           }
         ],
         mobileClick: false
