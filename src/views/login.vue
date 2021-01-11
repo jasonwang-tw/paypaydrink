@@ -2,18 +2,18 @@
   <div id="account" class="">
     <accountLogo />
     <div class="accountContainer m-auto block text-center px-10">
-      <div class="loginForm pt-14">
+      <div class="entyForm pt-14">
         <h4>歡迎回來</h4>
         <p>使用您的電子郵件地址登入。</p>
         <form action="">
-          <input type="text" placeholder="請輸入電子郵件地址" />
-          <input type="password" placeholder="請輸入密碼" />
+          <div class="inputBar"><input type="text" placeholder="請輸入電子郵件地址" /></div>
+          <div class="inputBar"><input type="password" placeholder="請輸入密碼" /></div>
           <button class="btn-dark-blue">登入</button>
         </form>
         <p class="text-main-500 mt-10">
           還沒用過 配配飲 嗎？
-          <router-link to="/" class="text-sub-500 hover:text-sub-100">建立帳號</router-link>，還是
-          <router-link to="/" class="text-sub-500 hover:text-sub-100">忘記密碼</router-link>？
+          <router-link to="/newaccount" class="text-sub-500 hover:text-sub-100">建立帳號</router-link>，還是
+          <router-link to="/forgetPassword" class="text-sub-500 hover:text-sub-100">忘記密碼</router-link>？ 
         </p>
         <p class="my-5 text-xl">或</p>
         <div class="social flex justify-between">
@@ -50,8 +50,8 @@
   .accountContainer {
     max-width: 500px;
   }
-  .loginForm {
-    input {
+  .entyForm {
+    .inputBar {
       margin-bottom: 1rem;
     }
   }

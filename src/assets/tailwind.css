@@ -10,6 +10,8 @@
   --color-sup3: #afc8e9;
   --color-sup3-placeholder: #afc8e96e;
   --color-focus: #57c4e540;
+  --color-error: #e23618;
+  --color-error-outline: #e2361836;
 }
 
 @tailwind base;
@@ -84,10 +86,10 @@
     @apply hover:text-sup1-100 hover:border-sup1-100 duration-200 text-main-100 border-main-100 border py-2 px-4 rounded-md no-underline;
   }
   .btn-light-blue {
-    @apply text-white bg-sup1-100 hover:bg-sup1-500;
+    @apply text-white bg-sup1-100 hover:bg-sup1-500 py-2 px-4 rounded-md no-underline;
   }
   .btn-dark-blue {
-    @apply text-white bg-main-500 hover:bg-main-100;
+    @apply text-white bg-main-500 hover:bg-main-100 py-2 px-4 rounded-md no-underline;
   }
   .btn {
     @apply duration-200 py-2 px-4 rounded-md w-full;
@@ -111,6 +113,16 @@
   }
   .afterIcon:after {
     margin-left: 10px;
+  }
+  .inputError{
+    border-color: var(--color-error) !important;
+  }
+  .inputError:focus{
+    box-shadow: 0 0 1px 0.2rem var(--color-error-outline);
+  }
+  .error{
+    color: var(--color-error);
+    font-size: .75rem;
   }
 }
 
