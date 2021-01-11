@@ -10,7 +10,7 @@
         <i class="pay-menu"></i>
       </div>
       <div
-        class="nav md:flex fixed bg-white h-full md:h-auto md:relative duration-200"
+        class="nav md:flex fixed bg-white h-full md:h-auto md:relative duration-200 top-0"
         :class="{ mobileOpenClass: mobileClick }"
       >
         <div class="block md:hidden" @click="mobileClick = !mobileClick">Close</div>
