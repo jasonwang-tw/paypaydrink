@@ -18,22 +18,22 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-semibold;
+    @apply text-4xl font-semibold mb-4;
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl font-semibold mb-4;
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl font-semibold mb-4;
   }
   h4 {
-    @apply text-xl font-semibold;
+    @apply text-xl font-semibold mb-4;
   }
   h5 {
-    @apply text-lg font-semibold;
+    @apply text-lg font-semibold mb-4;
   }
   h6 {
-    @apply text-sm font-semibold;
+    @apply text-sm font-semibold mb-4;
   }
   td {
     @apply px-4 py-2 border-sup2-500;
@@ -59,7 +59,7 @@
     @apply border px-4 py-2 border-sup3-500 rounded-md text-main-500 bg-white duration-200 w-full;
   }
   input {
-    @apply placeholder-sup3-400;
+    @apply placeholder-sup3-500;
   }
   button {
     @apply duration-200 py-2 px-4 rounded-md w-full font-light;
@@ -68,7 +68,7 @@
     @apply font-light;
   }
   p {
-    @apply text-base leading-6;
+    @apply text-base leading-6 mb-2;
   }
   hr {
     @apply border-sup2-500 my-5;
@@ -99,6 +99,18 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  .beforeIcon:before,
+  .afterIcon:after {
+    font-family: 'paypaydrink' !important;
+    display: inline-block;
+    transform: translateY(1px);
+  }
+  .beforeIcon:before {
+    margin-right: 10px;
+  }
+  .afterIcon:after {
+    margin-left: 10px;
   }
 }
 

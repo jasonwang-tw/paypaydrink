@@ -11,7 +11,7 @@
       </div>
       <div
         class="nav md:flex fixed bg-white h-full md:h-auto md:relative duration-200"
-        :class="{ mobileOpenClass: mobileClick }"
+        :class="{ mobileNavActive: mobileClick }"
       >
         <div class="block md:hidden" @click="mobileClick = !mobileClick">Close</div>
         <ul class="mainMenu md:flex items-center list-none">
@@ -82,7 +82,7 @@
       width: 300px;
       right: -300px;
     }
-    .mobileOpenClass {
+    .mobileNavActive {
       right: 0;
     }
   }

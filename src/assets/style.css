@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'paypaydrink';
   src:
-    url('fonts/paypaydrink.ttf?ord83u') format('truetype'),
-    url('fonts/paypaydrink.woff?ord83u') format('woff'),
-    url('fonts/paypaydrink.svg?ord83u#paypaydrink') format('svg');
+    url('fonts/paypaydrink.ttf?efb90u') format('truetype'),
+    url('fonts/paypaydrink.woff?efb90u') format('woff'),
+    url('fonts/paypaydrink.svg?efb90u#paypaydrink') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -71,6 +71,9 @@ i {
 }
 .pay-start:before {
   content: "\e90d";
+}
+.pay-Vector-google:before {
+  content: "\e91e";
 }
 .pay-fb:before {
   content: "\e90e";
