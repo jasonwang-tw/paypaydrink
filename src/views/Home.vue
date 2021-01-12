@@ -17,9 +17,11 @@
         <carousel />
       </div>
     </div>
-    <div class="drinkMagic text-center mt-48 relative z-0">
-      <img src="../assets/gradientBg.png" alt="" srcset="" class="absolute z-0 center" />
+    <div class="drinkMagic text-center mt-32 relative z-0">
+      <div class="magicBg absolute w-full"></div>
+      <!-- <img src="../assets/gradientBg.png" alt="" srcset="" class="absolute z-0 center" /> -->
       <div class="relative text-main-500">
+        <img src="../assets/drink1.png" alt="" srcset="" class="mx-auto mb-10">
         <h2 class="">配配飲的魔法</h2>
         <p class="mt-3">我們堅持經典也擁抱創新，只是希望能看到您滿足的笑容 :D</p>
         <ul
@@ -38,6 +40,7 @@
       </div>
     </div>
     <div class="text-center mt-20 relative text-main-500">
+      <img src="../assets/drink2.png" alt="" srcset="" class="mx-auto mb-10">
       <h2 class="">立即體驗</h2>
       <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <shopPosition />
@@ -153,6 +156,15 @@
   }
   .downhand {
     left: 250px;
+  }
+  .magicBg{
+    height: 1600px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../assets/gradientBg.png),url(../assets/magicBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto,cover;
   }
   @media (max-width: 1440px) {
     .drinkCup {

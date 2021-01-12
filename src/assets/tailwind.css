@@ -58,7 +58,7 @@
   }
   select,
   input:not([type='radio']):not([type='checkbox']) {
-    @apply border px-4 py-2 border-sup3-500 rounded-md text-main-500 bg-white duration-200 w-full;
+    @apply border px-4 py-2 border-sup3-500 rounded-md text-main-500 bg-white duration-200 w-full appearance-none;
   }
   input {
     @apply placeholder-sup3-500;
