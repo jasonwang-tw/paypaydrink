@@ -1,5 +1,11 @@
 <template>
   <div id="account" class="">
+    <popup
+      :class="popupStatus"
+      title="驗證完成"
+      content="驗證完成，您可以登入會員中心囉。"
+      nextPage="/"
+    />
     <accountLogo />
     <div class="accountContainer m-auto block text-center px-10">
       <div class="entyForm pt-14">
@@ -9,7 +15,7 @@
           <div class="inputBar">
             <input type="text" placeholder="請輸入驗證碼" />
           </div>
-          <router-link to="/" class="btn-dark-blue block">繼續</router-link>
+          <div class="btn-dark-blue block" @click="popClick">繼續</div>
         </form>
       </div>
     </div>
@@ -20,15 +26,24 @@
 <script>
   import accountFooter from '@/components/accountFooter.vue'
   import accountLogo from '@/components/accountLogo.vue'
+  import popup from '@/components/popup.vue'
 
   export default {
     name: 'newAccount',
     components: {
       accountFooter,
-      accountLogo
+      accountLogo,
+      popup
     },
     data() {
-      return {}
+      return {
+        popupStatus: 'hidden'
+      }
+    },
+    methods: {
+      popClick: function() {
+        this.popupStatus = ''
+      }
     }
   }
 </script>

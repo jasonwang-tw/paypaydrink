@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <topmenu />
     <div class="topBanner relative">
       <h1 class="indexTitle lg:text-7xl text-main-500 text-6xl container m-auto xl:py-20 xl:px-60 py-20 px-10">

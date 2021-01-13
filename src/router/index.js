@@ -10,14 +10,14 @@ const routes = [
     // name: 'Home',
     component: Home,
   },
-  {
-    path: '/about',
-    // name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/about.vue'),
-  },
+  // {
+  //   path: '/about',
+  // name: 'About',
+  // route level code-splitting
+  // this generates a separate chunk (about.[hash].js) for this route
+  // which is lazy-loaded when the route is visited.
+  //   component: () => import('../views/about.vue'),
+  // },
   {
     path: '/content',
     component: () => import('../views/content.vue'),
@@ -41,6 +41,14 @@ const routes = [
   {
     path: '/resetPassword',
     component: () => import('../views/resetPassword.vue'),
+  },
+  {
+    path: '/terms',
+    component: () => import('../views/terms.vue'),
+  },
+  {
+    path: '/privacy',
+    component: () => import('../views/privacy.vue'),
   },
 ];
 

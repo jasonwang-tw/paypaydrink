@@ -26,6 +26,7 @@ module.exports = {
       sup1: {
         100: 'var(--color-sup1-100)',
         500: 'var(--color-sup1-500)',
+        900: 'var(--color-sup1-900)',
       },
       sup2: {
         500: 'var(--color-sup2)',

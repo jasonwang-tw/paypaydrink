@@ -74,11 +74,11 @@
             name: '立即體驗'
           },
           {
-            link: '/',
+            link: '/privacy',
             name: '隱私政策'
           },
           {
-            link: '/',
+            link: '/terms',
             name: '使用條款'
           }
         ]

@@ -10,16 +10,27 @@
         <i class="pay-menu"></i>
       </div>
       <div
-        class="nav md:flex fixed bg-white h-full md:h-auto md:relative duration-200 top-0 pt-8 px-10 md:p-0 shadow-xl md:shadow-none"
+        class="nav md:flex fixed bg-white h-full md:h-auto md:relative duration-200 top-0 pt-5 px-5 md:p-0 shadow-xl md:shadow-none"
         :class="{ mobileNavActive: mobileClick }"
       >
-        <div class="block md:hidden mb-10 rounded-3xl border-sup3-500 border inline-block px-1.5 py-0.5" @click="mobileClick = !mobileClick"><i class="pay-close1 text-sup3-500"></i></div>
+        <div
+          class="block md:hidden mb-10 rounded-3xl border-sup3-500 border inline-block px-1.5 py-0.5"
+          @click="mobileClick = !mobileClick"
+        >
+          <i class="pay-close1 text-sup3-500"></i>
+        </div>
         <ul class="mainMenu md:flex items-center list-none pl-0 text-right">
-          <li v-for="item in mainPage" :key="item" class="text-main-500 hover:text-sup1-100 px-4 md:py-0 py-2">
+          <li
+            v-for="item in mainPage"
+            :key="item"
+            class="text-main-500 hover:text-sup1-100 px-4 md:py-0 py-2"
+          >
             <router-link :to="item.link" class="no-underline">{{ item.name }}</router-link>
           </li>
         </ul>
-        <ul class="dashboardMenu md:flex items-center md:border-l pl-0 list-none">
+        <ul
+          class="dashboardMenu md:flex items-center md:border-l pl-0 list-none border-t pt-3 mt-3 md:border-t-0 md:pt-0 md:mt-0"
+        >
           <li
             v-for="item in dashboard"
             :key="item"
