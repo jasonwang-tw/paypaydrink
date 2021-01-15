@@ -16,11 +16,14 @@
         <div class="us block sm:flex text-left">
           <h5 class="mr-10 text-sub-500 mb-5">聯絡我們</h5>
           <ul class="list-none pl-0 text-left">
-            <li>台北市中山區中山北路96號13樓1405室</li>
+            <li>台北市中山區中山北路三段92號5樓</li>
             <li>
               <a href="mailto:evan@wiidreamthinker.com" class="hover:text-sup1-100"
-                >evan@wiidreamthinker.com</a
+                >service@wiidreamthinker.com</a
               >
+            </li>
+            <li>
+              <a href="tel:0965177683" class="hover:text-sup1-100">0965-177-683</a>
             </li>
           </ul>
         </div>
