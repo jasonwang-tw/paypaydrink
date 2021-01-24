@@ -87,10 +87,10 @@
             imgSrc: require('../assets/active3.jpg')
           },
           {
-            imgSrc: require('../assets/logo.png')
+            imgSrc: require('../assets/active3.jpg')
           },
           {
-            imgSrc: require('../assets/logo.png')
+            imgSrc: require('../assets/active1.jpg')
           }
         ]
       }

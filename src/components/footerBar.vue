@@ -2,7 +2,7 @@
   <div id="footerBar">
     <div class="max-w-3xl m-auto py-10 text-center">
       <img src="../assets/footer_logo.svg" alt="" class="block m-auto" />
-      <div class="pt-5">
+      <div class="pt-5 text-main-500">
         <router-link
           v-for="(item, index) in footerMenu"
           :key="index"
@@ -12,7 +12,7 @@
         >
       </div>
       <hr />
-      <div class="content block lg:flex justify-between p-5 lg:p-0">
+      <div class="content block lg:flex justify-between p-5 lg:p-0 text-main-500">
         <div class="us block sm:flex text-left">
           <h5 class="mr-10 text-sub-500 mb-5">聯絡我們</h5>
           <ul class="list-none pl-0 text-left">
@@ -49,7 +49,7 @@
         </div>
       </div>
       <hr />
-      <div class="coptRight">© 2020 PayPayDrink</div>
+      <div class="coptRight text-main-500">© 2020 PayPayDrink</div>
     </div>
   </div>
 </template>
