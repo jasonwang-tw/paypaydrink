@@ -40,7 +40,7 @@
         options: {
           // rewind: true,
           width: 1300,
-          gap: '3.5rem',
+          gap: '3rem',
           perPage: 3,
           perMove: 1,
           type: 'loop',
@@ -48,6 +48,7 @@
           pauseOnHover: false,
           resetProgress: false,
           focus: 'center',
+          fixedWidth: '400px',
           // arrows      : 'slider',
           breakpoints: {
             '1440': {
