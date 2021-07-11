@@ -27,6 +27,14 @@ const routes = [
     component: () => import('../views/login.vue'),
   },
   {
+    path: '/login-shopkeeper',
+    component: () => import('../views/login-shopkeeper.vue'),
+  },
+  {
+    path: '/join-form',
+    component: () => import('../views/join-form.vue'),
+  },
+  {
     path: '/newaccount',
     component: () => import('../views/newAccount.vue'),
   },

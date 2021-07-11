@@ -14,7 +14,7 @@
         :class="{ mobileNavActive: mobileClick }"
       >
         <div
-          class="block md:hidden mb-10 rounded-3xl border-sup3-500 border inline-block px-1.5 py-0.5"
+          class="md:hidden mb-10 rounded-3xl border-sup3-500 border inline-block px-1.5 py-0.5"
           @click="mobileClick = !mobileClick"
         >
           <i class="pay-close1 text-sup3-500"></i>
@@ -70,7 +70,7 @@
         ],
         dashboard: [
           {
-            link: '/',
+            link: '/login-shopkeeper',
             icon: '<i class="pay-shop"></i>',
             name: '我是店長'
           },
