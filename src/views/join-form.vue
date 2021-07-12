@@ -53,7 +53,7 @@
       class="fixed top-0 left-0 bg-black bg-opacity-20 w-full h-full z-20 flex items-center justify-center"
       :class="{ hidden: notice_hidden }"
     >
-      <div class="bg-white w-1/4 -mt-40 text-center p-10 rounded-lg shadow-lg">
+      <div class="bg-white lg:w-1/4 -mt-40 text-center p-10 rounded-lg shadow-lg">
         <h3>表單成功送出</h3>
         <p>請耐心等候，我們專人將盡快與您聯繫</p>
         <div class="btn-dark-blue w-1/4 mx-auto mt-10" @click="notice_hidden = true">
