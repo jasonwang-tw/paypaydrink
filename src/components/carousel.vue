@@ -48,7 +48,7 @@
           pauseOnHover: false,
           resetProgress: false,
           focus: 'center',
-          fixedWidth: '400px',
+          // fixedWidth: '400px',
           // arrows      : 'slider',
           breakpoints: {
             '1440': {

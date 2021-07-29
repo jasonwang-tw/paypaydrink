@@ -12,12 +12,16 @@
         </form>
         <p class="text-main-500 mt-10">
           還沒用過 配配飲 嗎？
-          <router-link to="/newaccount" class="text-sub-500 hover:text-sub-100">建立帳號</router-link>，還是
-          <router-link to="/forgetPassword" class="text-sub-500 hover:text-sub-100">忘記密碼</router-link>？ 
+          <router-link to="/newaccount" class="text-sub-500 hover:text-sub-100"
+            >建立帳號</router-link
+          >，還是
+          <router-link to="/forgetPassword" class="text-sub-500 hover:text-sub-100"
+            >忘記密碼</router-link
+          >？
         </p>
         <p class="my-5 text-xl">或</p>
         <div class="social md:flex justify-between block">
-          <button class="btnFb beforeIcon">
+          <button class="btnFb beforeIcon mb-3 md:mb-0">
             使用FaceBook登入
           </button>
           <button class="btnGoogle beforeIcon">

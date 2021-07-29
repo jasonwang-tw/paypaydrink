@@ -2,12 +2,12 @@
   <div id="footerBar">
     <div class="max-w-3xl m-auto py-10 text-center">
       <img src="../assets/footer_logo.svg" alt="" class="block m-auto" />
-      <div class="pt-5 text-main-500">
+      <div class="pt-5 text-main-500 mx-10">
         <router-link
           v-for="(item, index) in footerMenu"
           :key="index"
           :to="item.link"
-          class="no-underline hover:text-sup1-100 px-3"
+          class="no-underline hover:text-sup1-100 px-3 inline-block"
           >{{ item.name }}</router-link
         >
       </div>

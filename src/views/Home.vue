@@ -25,7 +25,7 @@
       <div class="relative text-main-500">
         <img src="../assets/drink1.png" alt="" srcset="" class="mx-auto mb-10" />
         <h2 class="">配配飲的魔法</h2>
-        <p class="mt-3">我們堅持經典也擁抱創新，只是希望能看到您滿足的笑容 :D</p>
+        <p class="mt-3 mx-10">我們堅持經典也擁抱創新，只是希望能看到您滿足的笑容 :D</p>
         <ul
           class="magicList grid gap-5 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:px-20 md:px-10 px-5 py-10"
         >
@@ -44,7 +44,7 @@
     <div class="text-center mt-20 relative text-main-500">
       <img src="../assets/drink2.png" alt="" srcset="" class="mx-auto mb-10" />
       <h2 class="">立即體驗</h2>
-      <p class="mt-3">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
+      <p class="mt-3 mx-10">搜尋離你最近的PayPayDrink服務據點，開始不一樣的生活</p>
       <shopPosition />
     </div>
     <div class="downApp bg-main-500 md:mt-52">
