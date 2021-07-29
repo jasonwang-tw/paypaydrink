@@ -31,9 +31,11 @@
               </select>
               <input class="border-white" type="text" placeholder="請輸入手機號碼" />
             </div>
-            <div class="flex justify-between mt-3">
+            <div class="md:flex justify-between mt-3">
               <span class="text-sm text-sup1-500">驗證碼已送出，請留意簡訊</span>
-              <div class="btn-light-blue flex-shrink-0 w-1/3 ml-4 duration-200">發送驗證碼</div>
+              <div class="btn-light-blue flex-shrink-0 md:w-1/3 md:ml-4 duration-200 mt-3 md:mt-0">
+                發送驗證碼
+              </div>
             </div>
           </div>
           <div class="inputBar">
