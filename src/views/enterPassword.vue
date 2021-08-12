@@ -1,21 +1,15 @@
 <template>
-  <div id="forgetPassword" class="">
-    <popup
-      :class="popupStatus"
-      title="即將重設您的密碼"
-      content="密碼重設連結已寄至您的電子郵件地址，請點擊地址中的重設連結設定新密碼。"
-      nextPage="/resetPassword"
-    />
+  <div id="enterPassword" class="">
     <accountLogo />
     <div class="accountContainer m-auto block text-center px-10">
       <div class="entyForm pt-14">
-        <h4>忘記密碼</h4>
-        <p>輸入您的電子郵件地址</p>
+        <h4>帳號登入</h4>
+        <p>輸入您的帳號密碼</p>
         <form action="">
           <div class="inputBar">
-            <input type="text" placeholder="請輸入電子郵件地址" />
+            <input type="password" placeholder="請輸入密碼" />
           </div>
-          <div class="btn-dark-blue block" @click="popClick">繼續</div>
+          <div class="btn-dark-blue block">登入</div>
         </form>
       </div>
     </div>
@@ -29,22 +23,15 @@
   import popup from '@/components/popup.vue'
 
   export default {
-    name: 'forgetPassword',
+    name: 'enterPassword',
     components: {
       accountFooter,
-      accountLogo,
-      popup
+      accountLogo
     },
     data() {
-      return {
-        popupStatus: 'hidden'
-      }
+      return {}
     },
-    methods: {
-      popClick: function() {
-        this.popupStatus = ''
-      }
-    }
+    methods: {}
   }
 </script>
 

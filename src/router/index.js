@@ -27,6 +27,10 @@ const routes = [
     component: () => import('../views/login.vue'),
   },
   {
+    path: '/enterPassword',
+    component: () => import('../views/enterPassword.vue'),
+  },
+  {
     path: '/login-shopkeeper',
     component: () => import('../views/login-shopkeeper.vue'),
   },
