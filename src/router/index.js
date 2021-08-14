@@ -62,6 +62,10 @@ const routes = [
     path: '/privacy',
     component: () => import('../views/privacy.vue'),
   },
+  {
+    path: '/price-list',
+    component: () => import('../views/price-list.vue'),
+  },
 ];
 
 const router = new VueRouter({

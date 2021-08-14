@@ -1,0 +1,58 @@
+[
+    {
+        "drinkLink": "/",
+        "imgSrc": "tea1.png",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    },
+    {
+        "drinkLink": "/",
+        "imgSrc": "tea2.png",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    },
+    {
+        "drinkLink": "/",
+        "imgSrc": "tea3.png",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    },
+    {
+        "drinkLink": "/",
+        "imgSrc": "active1.jpg",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    },
+    {
+        "drinkLink": "/",
+        "imgSrc": "active1.jpg",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    },
+    {
+        "drinkLink": "/",
+        "imgSrc": "active1.jpg",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    },
+    {
+        "drinkLink": "/",
+        "imgSrc": "tea1.png",
+        "name": "古道茶鄉",
+        "price": "60",
+        "rating": "4.7",
+        "sold": "145,78"
+    }
+]

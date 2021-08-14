@@ -66,6 +66,10 @@
           {
             link: '/',
             name: '立即體驗'
+          },
+          {
+            link: '/price-list',
+            name: '價目表'
           }
         ],
         dashboard: [
