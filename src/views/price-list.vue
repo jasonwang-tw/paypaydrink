@@ -13,7 +13,7 @@
             style="width:41px;height: 48px;"
             class="absolute flex items-center justify-center -mt-3 ml-5"
           >
-            <span class="z-10 relative text-white -mt-3">{{ index }}</span>
+            <span class="z-10 relative text-white -mt-3">{{ index + 1 }}</span>
             <img src="../assets/indexNumber.png" alt="" class="absolute top-0 left-0 z-0" />
           </div>
           <div class="drinkMainImg">
